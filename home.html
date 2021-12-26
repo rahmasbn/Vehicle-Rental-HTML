@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vehicle Rental</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light sticky-top" style="background-color: #ffffff">
+        <div class="container">
+            <span class="navbar-brand">
+                <img src="./assets/logo.png" alt="logo" class="logo" />
+            </span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuBar"
+                aria-controls="menuBar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuBar">
+                <ul class="nav navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active" href="./home.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#">Vehicle Type</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#">History</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
+                <button type="submit" class="btn btn-outline-warning btn-sm mx-3" style="background-color: white">
+                    <a href="./login.html">Login</a>
+                </button>
+                <button type="submit" class="btn btn-warning btn-sm">
+                    <a href="./register.html">Register</a>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <div class="container-fluid banner">
+        <div class="container">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h1>Explore and <br>Travel</h1>
+                </div>
+                <div class="grid-item">
+                    <p>Vehicle Finder</p>
+                    <hr>
+                </div>
+                <div class="grid-item">
+                    <form>
+                        <div class="wrapper">
+                            <div class="inside-wrapper">
+                                <select id="location" class="form-select">
+                                    <option value="">Location</option>
+                                    <option value="Bali">Bali</option>
+                                    <option value="Yogyakarta">Yogyakarta</option>
+                                    <option value="Jakarta">Jakarta</option>
+                                    <option value="Kalimantan">Kalimantan</option>
+                                    <option value="Malang">Malang</option>
+                                </select>
+                            </div>
+                            <div class="inside-wrapper">
+                                <select id="type" class="form-select">
+                                    <option value="">Type</option>
+                                    <option value="Cars">Cars</option>
+                                    <option value="Motorbikes">Motorbikes</option>
+                                    <option value="Bikes">Bikes</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="wrapper">
+                            <div class="inside-wrapper">
+                                <select id="payment" class="form-select">
+                                    <option value="">Payment</option>
+                                    <option value="Cash">Cash</option>
+                                    <option value="DP">DP</option>
+                                </select>
+
+                            </div>
+                            <div class="inside-wrapper">
+                                <input type="text" class="form-select" value="Date" onfocus="(this.type='date')">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- <button class="explore" type="button">Explore</button> -->
+            </div>
+            <button class="explore" type="button">Explore</button>
+        </div>
+    </div>
+
+    <!-- Popular -->
+    <main class="main-content">
+        <div class="container">
+            <h2>Popular in Town</h2>
+            <div class="view-more" style="text-align:right">
+                <a href="#">View More > </a>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                    <div class="card border-0 bg-light">
+                        <a href="./vehicle-detail.html">
+                            <img src="./assets/van.webp" class="card-img-top" alt="van" />
+                        </a>
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Merapi</h3>
+                            <p class="card-text">Yogyakarta</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12 d-flex align-item-stretch">
+                    <div class="card border-0 bg-light">
+                        <img src="./assets/sport-motorbike.webp" class="card-img-top" alt="motorbike" />
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Teluk Bogam</h3>
+                            <p class="card-text">Kalimantan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12 d-flex align-item-stretch">
+                    <div class="card border-0 bg-light">
+                        <img src="./assets/white-jeep.webp" class="card-img-top" alt="White Jeep" />
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Bromo</h3>
+                            <p class="card-text">Malang</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                    <div class="card border-0 bg-light">
+                        <img src="./assets/woman-with-motorbike.webp" class="card-img-top" alt="woman with motorbike" />
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Malioboro</h3>
+                            <p class="card-text">Yogyakarta</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <!-- Testimonials -->
+    <section class="testimonial-section d-flex align-items-center">
+        <div class="container">
+            <h2 class="mb-5">Testimonials</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="myCarousel" class="carousel slide" data-bs-interval="5000" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item testi-item active" data-img="./assets/man-with-camera.webp">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <p class="mt-3">
+                                    "It was the right decision to rent vehicle here, I spent
+                                    less money and enjoy the trip. It was an amazing
+                                    experience to have a ride for wildlife trip!"
+                                </p>
+                                <h5 style="margin-top: 50px;">Edward Newgate</h4>
+                                    <p style="font-family: 'Nunito', sans-serif; font-size: 15px;">Founder Circle</p>
+                            </div>
+                            <div class="carousel-item testi-item" data-img="./assets/girl-with-red-clothes.webp">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <p class="mt-3">
+                                    "It was the right decision to rent vehicle here, I spent
+                                    less money and enjoy the trip. It was an amazing
+                                    experience to have a ride for wildlife trip!"
+                                </p>
+                                <h5 style="margin-top: 50px;">Samantha Doe</h5>
+                                <p style="font-family: 'Nunito', sans-serif; font-size: 15px;">Founder Circle</p>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel"
+                            data-bs-slide="prev">
+                            <img src="./assets/cc-arrow-left-circle-32.png" width="35px" height="35px" alt="prev">
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel"
+                            data-bs-slide="next">
+                            <img src="./assets/cc-arrow-right-circle-32.png" width="35px" height="35px" alt="next">
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-4 testi-img">
+                    <div class="img-box">
+                        <div class="img-box-inner">
+                            <img src="./assets/man-with-camera.webp" class="img-testi" alt="man-with-camera" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="description col-lg-3">
+                    <img src="./assets/logo.png" alt="logo" class="logo" />
+                    <p>
+                        <br />
+                        Plan and book your perfect trip with expert advice, travel trip
+                        for vehicle information from us
+                    </p>
+                    <p style="color: #848484; font-size: 15px" class="copyright">
+                        &copy;2020 Vehicle Rental Center. All right reserved </p><br />
+                </div>
+                <div class="footer-col destination col-sm-4 col-md-4 col-lg-3">
+                    <p>Destinations</p>
+                    <ul>
+                        <li><a href="#">Bali</a></li>
+                        <li><a href="#">Yogyakarta</a></li>
+                        <li><a href="#">Jakarta</a></li>
+                        <li><a href="#">Kalimantan</a></li>
+                        <li><a href="#">Malang</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col col-sm-4 col-md-4 col-lg-3">
+                    <p>Vehicles</p>
+                    <ul>
+                        <li><a href="#">Bike</a></li>
+                        <li><a href="#">Cars</a></li>
+                        <li><a href="#">Motorbike</a></li>
+                        <li><a href="#">Return Times</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col interest col-sm-4 col-md-4 col-lg-3">
+                    <p>Interests</p>
+                    <ul>
+                        <li><a href="#">Advanture Travel</a></li>
+                        <li><a href="#">Art And Culture</a></li>
+                        <li><a href="#">Wildlife And Nature</a></li>
+                        <li><a href="#">Family Holidays</a></li>
+                        <li><a href="#">Culinary Trip</a></li>
+                    </ul>
+                </div>
+            </div>
+            <br />
+            <hr />
+        </div>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>
